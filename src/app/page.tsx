@@ -1,15 +1,14 @@
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Navbar from '../components/Navbar'
+import Navbar from './components/Navbar'
+import style from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <>
     <Navbar/>
-    <div className='text-9xl text-slate-400'>
-      <h1>FAM Security</h1>
-      <Link href="/about"><h1 className='text-4xl'>About us</h1></Link>
+    <div className='bg-blue-900/50 text-9xl h-screen'>
+      <h1>Home</h1>
     </div>
     </>
   )
