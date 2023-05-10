@@ -8,7 +8,7 @@
 }
 
 .background-animate {
-    background-size: 400%;
+    background-size: 100%;
 
     -webkit-animation: AnimationName 3s ease infinite;
     -moz-animation: AnimationName 3s ease infinite;
@@ -27,11 +27,11 @@
 
   .gradient-text {
     background-image: linear-gradient(to top,var(--tw-gradient-stops));
-    --tw-gradient-from: #fffb00;
-    --tw-gradient-to: rgb(249 115 22 / 0);
+    --tw-gradient-from: #ffee00;
+    --tw-gradient-to: rgb(255, 255, 255);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    --tw-gradient-to: #eab308;
+    --tw-gradient-to: #ff0000;
     background-clip: text;
-    color: #0000;
+    color: #ffffff00;
     -webkit-background-clip: text;
 }
