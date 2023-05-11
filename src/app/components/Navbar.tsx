@@ -4,31 +4,34 @@ import Image from 'next/image'
 export default function Navbar(){
     return(
         <>
-        <nav className="
-        sticky
-        bg-clip-padding
-        bg-blue-950
+        <nav className="sticky
+        bg-black/50
+        w-full
         top-0
+        z-50
         flex
         justify-between
         items-center
         blur-backdrop-filter
-        p-3
-        md:flex md:items-center md:justify-between">
-            
+        p-2">
             <div>
-                <Link href='/'>
-                    <Image 
-                    className='ml-10 hover:w-36 cursor-pointer duration-300' 
+                <Link href='/' replace={true} scroll={true}>
+                    <Image
+                    className='ml-10 hover:w-36 cursor-pointer duration-300
+                    dark:drop-shadow-[0_0_0.4rem_#000000]' 
                     src='https://www.famsecurity.com.br/wp-content/uploads/logotipo-1.png' alt='' 
-                    width={130} height={100} />
+                    width={130} height={100} priority={true} />
                 </Link>
             </div>
-            <ul className='flex row text-2xl font-normal space-x-10'>
-                <li><Link className=' shadow-cyan-500 hover:shadow-2xl hover:text-sky-900 hover:font-black duration-300 ease-linear' href="/">Home</Link></li>
-                <li><Link className=' hover:text-yellow-400 hover:font-black duration-300 ease-linear' href="/about">About Us</Link></li>
-                <li><Link className=' hover:text-amber-500 hover:font-black duration-300 ease-linear' href="/services">Services</Link></li>
-                <li><Link className=' hover:text-green-600 hover:font-black duration-300 ease-linear' href="/contact">Contact Us</Link></li>
+            <ul className='flex row text-2xl font-extralight mr-5 space-x-10'>
+                <li><Link replace scroll={true} className=' text-white hover:text-red-600 hover:font-black 
+                duration-200 ease-in-out' href="/">Home</Link></li>
+                <li><Link scroll={true} className=' text-white hover:text-yellow-400 hover:font-black 
+                duration-200 ease-in-out ' href="/about">About Us</Link></li>
+                <li><Link scroll={true} className=' text-white hover:text-amber-500 hover:font-black 
+                duration-200 ease-out ' href="/services">Services</Link></li>
+                <li><Link scroll={true} className=' text-white hover:text-green-600 hover:font-black 
+                duration-200 ease-in-out ' href="/contact">Contact Us</Link></li>
             </ul>
         </nav>
         </>

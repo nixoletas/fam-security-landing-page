@@ -7,31 +7,51 @@
     -webkit-backdrop-filter: blur(10px);
 }
 
-.background-animate {
-    background-size: 100%;
-
-    -webkit-animation: AnimationName 3s ease infinite;
-    -moz-animation: AnimationName 3s ease infinite;
-    animation: AnimationName 3s ease infinite;
+  body {
+    background: linear-gradient(45deg, #010114 0%, #030031 50%, #04003d 100%);
+    background-size: 300% 300%;
+    animation: gradient 60s ease infinite;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
 
-  @keyframes AnimationName {
-    0%,
-    100% {
-      background-position: 0% 50%;
+    @keyframes gradient {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 70% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
     }
-    50% {
-      background-position: 100% 50%;
-    }
-  }
 
-  .gradient-text {
-    background-image: linear-gradient(to top,var(--tw-gradient-stops));
-    --tw-gradient-from: #ffee00;
-    --tw-gradient-to: rgb(255, 255, 255);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    --tw-gradient-to: #ff0000;
-    background-clip: text;
-    color: #ffffff00;
-    -webkit-background-clip: text;
-}
+    .gradient-text {
+        background: linear-gradient(0deg, #000000 0%, #fc0000 50%, #ffe600 100%);
+        animation: gradient 60s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .gradient-vigilant {
+        background: linear-gradient(45deg, #ff0000 0%, #000281 50%, #1100ff 100%);
+        animation: gradient 60s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .gradient-matrix {
+        background: linear-gradient(180deg, #00ff22 0%, #0b8100 50%, #000300 100%);
+        animation: gradient 60s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .gradient-light {
+        background: linear-gradient(90deg, #ffe600 0%, #ff7300 100%);
+        animation: gradient 60s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
