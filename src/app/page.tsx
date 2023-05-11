@@ -1,21 +1,22 @@
-import Link from 'next/link'
 import Navbar from './components/Navbar'
 import Image from 'next/image'
-import { Smooch } from 'next/font/google'
+import Link from 'next/link'
+import About from './components/about'
+import Contact from './components/contact'
+import Services from './components/services'
 
 export default function Home() {
   return (
     <>
-    <div className='fixed animate-going-up 
+    <div id='home'className='fixed animate-going-up 
     bg-gradient-to-r from-darkblue via-blue-800 to-purple-900/40 
     h-20 blur-3xl opacity-20 w-full'></div>
     <Navbar/>
     <div className='scroll-smooth'>
     <div className='text-9xl h-full'>
-      <div className='mb-40
-      flex flex-col transition-all md:flex-row
-     text-slate-400 h-full'>
-        <div className='ml-3 animate-fade-in-down min-w-[50%] mt-40 flex flex-col 
+      <div className=' h-screen flex flex-col transition-all md:flex-row
+     text-slate-400'>
+        <div className='ml-3 animate-fade-in-down min-w-[50%] mt-52 flex flex-col 
         items-center text-center'>
           <h1 className='text-4xl p-2 text-white font-black uppercase'>
             <span className=''>vigilância</span>,
@@ -24,15 +25,14 @@ export default function Home() {
           <span className='text-4xl gradient-light font-bold uppercase'> na palma da sua mão!</span></h1>
           <p className='text-lg font-bold font-sans  text-gray3 uppercase'>segurança, 
           parceria e confiança.</p>
-          <Link href={'#section-2'} >
+          <Link href='#section-2'>
           <button className='shadow-cyan-500/50 flex flex-col bg-slate-950
           hover:bg-blue-950 text-white font-bold uppercase p-4 rounded-md hover:rounded-xl mt-4 
           text-sm hover:text-base animate-pulse duration-300 ease-in-out'>
-            SAIBA MAIS</button>
-          </Link>
+            SAIBA MAIS</button></Link>
         </div>
         <div className='min-w-[50%] flex flex-col justify-center items-center text-center p-6 h-96'>
-          <div className='animate-fade-in-up flex flex-row mt-20 space-x-5'>
+          <div className='animate-fade-in-up flex flex-row mt-52 space-x-5'>
           <Image className='shadow-cyan-500/50 hover:w-52 
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] duration-500 ease-in-out'
           src="/vigilant.svg" alt="My SVG file" width={170} height={170}/>
@@ -45,12 +45,18 @@ export default function Home() {
           </div>
         </div>
     </div>
-    <section id="section-2" className='flex flex-col justify-center items-center text-center'>
+    <div id="section-2" className='dark:drop-shadow-[0_0_0.1rem_#ffffff70] -mt-12 mb-20  w-full flex animate-fade-in-down animate-bounce align-top justify-center text-center'>
+      <Image src='/scroll-down.svg' alt='scroll down' width={50} height={50}/>
+    </div>
+    <section className='flex flex-col justify-center items-center text-center'>
     <div className=' text-white text-center space-y-96 h-96 text-7xl uppercase font-black'>
-      <h1>Tecnologia</h1>
+      <h1 className='text-4xl font-semibold '>por que confiar na FAM Security?</h1>
       <h1>Segurança</h1>
       <h1>Parceria</h1>
       <h1>Confiança</h1>
+      <About/>
+      <Contact/>
+      <Services/>
     </div>
       </section>
     </div>

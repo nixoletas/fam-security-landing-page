@@ -7,13 +7,18 @@
     -webkit-backdrop-filter: blur(10px);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
   body {
     background: linear-gradient(45deg, #010114 0%, #030031 50%, #04003d 100%);
     background-size: 300% 300%;
     animation: gradient 60s ease infinite;
     background-attachment: fixed;
     overflow-x: hidden;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
   }
 
     @keyframes gradient {
