@@ -8,9 +8,6 @@ import Services from './components/services'
 export default function Home() {
   return (
     <>
-    <div id='home'className='fixed animate-going-up 
-    bg-gradient-to-r from-darkblue via-blue-800 to-purple-900/40 
-    h-20 blur-3xl opacity-20 w-full'></div>
     <Navbar/>
     <div className='scroll-smooth'>
     <div className='text-9xl h-full'>
@@ -45,7 +42,7 @@ export default function Home() {
           </div>
         </div>
     </div>
-    <div id="section-2" className='dark:drop-shadow-[0_0_0.1rem_#ffffff70] -mt-12 mb-20  w-full flex animate-fade-in-down animate-bounce align-top justify-center text-center'>
+    <div id="section-2" className='dark:drop-shadow-[0_0_0.1rem_#ffffff70] -mt-12 mb-20  w-full flex animate-bounce align-top justify-center text-center'>
       <Image src='/scroll-down.svg' alt='scroll down' width={50} height={50}/>
     </div>
     <section className='flex flex-col justify-center items-center text-center'>
