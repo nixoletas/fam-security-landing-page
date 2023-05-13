@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <>
     <div id='home' className='scroll-smooth'>
-    <div className='text-9xl h-full'>
+    <div className='text-9xl h-full  mb-10'>
       <div className=' h-screen flex flex-col transition-all md:flex-row
      text-slate-400'>
         <div className='ml-3 animate-fade-in-down min-w-[50%] mt-52 flex flex-col 
