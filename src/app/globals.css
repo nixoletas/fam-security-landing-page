@@ -60,3 +60,10 @@ html {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    .gradient-yellow {
+        background: linear-gradient(90deg, #a59821 0%, #ffee00 100%);
+        animation: gradient 60s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }

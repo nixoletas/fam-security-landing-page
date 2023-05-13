@@ -6,9 +6,9 @@ export default function Hero() {
     <>
     <div id='home' className='scroll-smooth'>
     <div className='text-9xl h-full  mb-10'>
-      <div className=' h-screen flex flex-col transition-all md:flex-row
+      <div className=' h-full flex flex-col transition-all md:flex-row
      text-slate-400'>
-        <div className='ml-3 animate-fade-in-down min-w-[50%] mt-52 flex flex-col 
+        <div className='animate-fade-in-down min-w-[50%] mt-52 flex flex-col 
         items-center text-center'>
           <h1 className=' text-4xl p-2 text-white font-black uppercase'>
             <span className=''>vigilância</span>,
