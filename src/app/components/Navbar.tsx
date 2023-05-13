@@ -20,7 +20,7 @@ export default function Navbar(){
                 className='ml-2 cursor-pointer duration-300
                 dark:drop-shadow-[0_0_0.4rem_#000000]' 
                 src='https://www.famsecurity.com.br/wp-content/uploads/logotipo-1.png' alt='' 
-                width={130} height={100} priority={true} />
+                width={120} height={95} priority={true} />
                 </a>
             </div>
             <ul className=' max-md:hidden flex row text-2xl font-extralight mr-5 space-x-10'>
@@ -41,7 +41,7 @@ export default function Navbar(){
                     <a href='#services'>Services</a>
                 </li>
             </ul>
-            <ul className=' min-md:hidden flex row text-xs font-extralight'>
+            <ul className=' min-md:hidden flex row text-xs space-x-3 font-extralight'>
                 <li className=' text-white hover:text-blue-600 hover:font-black 
                 duration-200 ease-in-out'>
                     <a href='#home' >Home</a>

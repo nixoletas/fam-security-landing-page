@@ -24,15 +24,15 @@ export default function Hero() {
             SAIBA MAIS</button></a>
         </div>
 
-        <div className='flex flex-col my-40 justify-center items-center text-center p-6'>
+        <div className=' flex flex-col my-40 justify-center items-center text-center p-6'>
           <div className='animate-fade-in-up flex flex-row space-x-10'>
-          <Image className='shadow-cyan-500/50 hover:w-52 
+          <Image className='shadow-cyan-500/50  hover:animate-pulse 
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] duration-500 ease-in-out'
           src="/vigilant.svg" alt="My SVG file" width={80} height={80}/>
-          <Image className='hover:w-52 duration-500 
+          <Image className=' duration-500 hover:animate-pulse
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] ease-in-out' 
           src="/technology.svg" alt="My SVG file" width={80} height={80}/>
-          <Image className='hover:w-52 hover:dark:invert-3 duration-500 
+          <Image className=' duration-500 hover:animate-pulse
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] ease-in-out' 
           src="/facilities.svg" alt="My SVG file" width={80} height={80}/>
           </div>
