@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar'
 import Image from 'next/image'
-import Link from 'next/link'
 import About from './components/about'
 import Contact from './components/contact'
 import Services from './components/services'
@@ -9,7 +8,7 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <div className='scroll-smooth'>
+    <div id='home' className='scroll-smooth'>
     <div className='text-9xl h-full'>
       <div className=' h-screen flex flex-col transition-all md:flex-row
      text-slate-400'>
@@ -22,11 +21,11 @@ export default function Home() {
           <span className='text-4xl gradient-light font-bold uppercase'> na palma da sua mão!</span></h1>
           <p className='text-lg font-bold font-sans  text-gray3 uppercase'>segurança, 
           parceria e confiança.</p>
-          <Link href='#section-2'>
+          <a href='#section-2'>
           <button className='shadow-cyan-500/50 flex flex-col bg-slate-950
           hover:bg-blue-950 text-white font-bold uppercase p-4 rounded-md hover:rounded-xl mt-4 
           text-sm hover:text-base animate-pulse duration-300 ease-in-out'>
-            SAIBA MAIS</button></Link>
+            SAIBA MAIS</button></a>
         </div>
         <div className='min-w-[50%] flex flex-col justify-center items-center text-center p-6 h-96'>
           <div className='animate-fade-in-up flex flex-row mt-52 space-x-5'>
