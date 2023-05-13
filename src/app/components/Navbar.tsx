@@ -41,24 +41,6 @@ export default function Navbar(){
                     <a href='#services'>Services</a>
                 </li>
             </ul>
-            <ul className=' min-md:hidden flex row text-xs space-x-3 font-extralight'>
-                <li className=' text-white hover:text-blue-600 hover:font-black 
-                duration-200 ease-in-out'>
-                    <a href='#home' >Home</a>
-                </li>
-                <li className=' text-white hover:text-yellow-400 hover:font-black 
-                duration-200 ease-in-out'>
-                    <a href='#about'>About Us</a>
-                </li>
-                <li className=' text-white hover:text-amber-500 hover:font-black 
-                duration-200 ease-out'>
-                    <a href='#contact'>Contact Us</a>
-                </li>
-                <li className=' text-white hover:text-green-600 hover:font-black 
-                duration-200 ease-in-out'>
-                    <a href='#services'>Services</a>
-                </li>
-            </ul>
         </nav>
         </>
     )

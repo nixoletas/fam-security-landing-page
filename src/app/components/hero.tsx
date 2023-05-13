@@ -4,16 +4,17 @@ import Image from 'next/image'
 export default function Hero() {
   return (
     <>
-    <div id='home' className='h-full scroll-smooth'>
+    <div id='home' className='h-24'></div>
+    <div className='h-full scroll-smooth'>
     <div className=''>
       <div className='transition-all
      text-slate-400'>
-        <div className='animate-fade-in-down mt-40  flex flex-col 
+        <div className='animate-fade-in-down mt-2  flex flex-col 
         items-center text-center'>
-          <h1 className='text-3xl p-2 text-white font-black uppercase'>
+          <h1 className='px-12 text-3xl text-white font-black uppercase'>
             <span className=''>vigilância</span>,
             <span className='font-FiraCode'> tecnologia </span>
-            <span className='font-trebuchet '>e facilities </span> 
+            <span className='font-trebuchet '>e facilities </span><br/>
           <span className='text-3xl gradient-light font-bold uppercase'> na palma da sua mão!</span></h1>
           <p className='text-lg font-bold font-sans  text-gray3 uppercase'>segurança, 
           parceria e confiança.</p>
@@ -24,17 +25,17 @@ export default function Hero() {
             SAIBA MAIS</button></a>
         </div>
 
-        <div className=' flex flex-col my-40 justify-center items-center text-center p-6'>
+        <div className=' flex flex-col my-10 justify-center items-center text-center p-6'>
           <div className='animate-fade-in-up flex flex-row space-x-10'>
           <Image className='shadow-cyan-500/50  hover:animate-pulse 
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] duration-500 ease-in-out'
-          src="/vigilant.svg" alt="My SVG file" width={80} height={80}/>
+          src="/vigilant.svg" alt="My SVG file" width={120} height={120}/>
           <Image className=' duration-500 hover:animate-pulse
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] ease-in-out' 
-          src="/technology.svg" alt="My SVG file" width={80} height={80}/>
+          src="/technology.svg" alt="My SVG file" width={120} height={120}/>
           <Image className=' duration-500 hover:animate-pulse
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] ease-in-out' 
-          src="/facilities.svg" alt="My SVG file" width={80} height={80}/>
+          src="/facilities.svg" alt="My SVG file" width={120} height={120}/>
           </div>
         </div>
 
