@@ -23,7 +23,7 @@ export default function Navbar(){
                 width={130} height={100} priority={true} />
                 </a>
             </div>
-            <ul className='flex row text-2xl font-extralight mr-5 space-x-10'>
+            <ul className=' max-md:hidden flex row text-2xl font-extralight mr-5 space-x-10'>
                 <li className=' text-white hover:text-blue-600 hover:font-black 
                 duration-200 ease-in-out'>
                     <a href='#home' >Home</a>
