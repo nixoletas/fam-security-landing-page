@@ -49,25 +49,6 @@ module.exports = {
             'background-position': '100% 50%',
           },
         },
-        gradientchange: {
-          '0%, 100%': {
-            'background-position': '0% 50%',
-          },
-          '50%': {
-            'background-position': '100% 50%',
-          },
-        },
-        tilt: {
-          '0%, 50%, 100%': {
-            transform: 'rotate(0deg)',
-          },
-          '25%': {
-            transform: 'rotate(1deg)',
-          },
-          '75%': {
-            transform: 'rotate(-1deg)',
-          },
-        },
         'fade-in-down': {
           '0%': {
             opacity: '0',
