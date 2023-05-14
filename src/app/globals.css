@@ -9,6 +9,8 @@
 
 html {
     scroll-behavior: smooth;
+    background: linear-gradient(45deg, #01010c 0%, #030031 50%, #04003d 100%);
+    background-size: 300% 300%;
 }
 
   body {
