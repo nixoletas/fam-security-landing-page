@@ -27,13 +27,13 @@ export default function Hero() {
 
         <div className=' flex flex-col my-10 justify-center items-center text-center p-6'>
           <div className='animate-fade-in-up flex flex-row space-x-10'>
-          <Image className='shadow-cyan-500/50  hover:animate-pulse 
+          <Image className=' max-sm:w-20  shadow-cyan-500/50  hover:animate-pulse 
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] duration-500 ease-in-out'
           src="/vigilant.svg" alt="My SVG file" width={120} height={120}/>
-          <Image className=' duration-500 hover:animate-pulse
+          <Image className=' max-sm:w-20 duration-500 hover:animate-pulse
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] ease-in-out' 
           src="/technology.svg" alt="My SVG file" width={120} height={120}/>
-          <Image className=' duration-500 hover:animate-pulse
+          <Image className='max-sm:w-20 duration-500 hover:animate-pulse
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] ease-in-out' 
           src="/facilities.svg" alt="My SVG file" width={120} height={120}/>
           </div>
