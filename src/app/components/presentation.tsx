@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Presentation() {
     return (
         <>
-        <div id='presentation' className='w-full h-20'></div>
+        <div id='presentation' className='w-full h-16'></div>
     <section className='flex-row justify-center items-center text-center'>
     <div className=' text-white text-center h-full text-7xl uppercase font-black'>
       <h1 className='text-4xl font-semibold mb-10'>por que confiar na FAM Security?</h1>
