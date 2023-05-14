@@ -17,9 +17,6 @@ export default function Presentation() {
         <h1>Transparência</h1>
       </div>
     </div>
-    <div className='dark:drop-shadow-[0_0_0.1rem_#ffffff70] mb-4  w-full flex  align-middle justify-center text-center'>
-      <Image className='p-4'src='https://www.famsecurity.com.br/wp-content/uploads/6447454b-b949-49f1-9d0c-2eef240e8615.jpg' alt='scroll down' width={600} height={600}/>
-    </div>
       </section>
       </>
     )
