@@ -27,7 +27,7 @@ export default function Hero() {
 
         <div className=' flex flex-col my-10 mx-1 justify-center items-center text-center'>
           <div className='animate-fade-in-up flex flex-row space-x-10'>
-          <Image className=' max-sm:w-20  shadow-cyan-500/50  hover:animate-pulse 
+          <Image className='max-sm:w-20  shadow-cyan-500/50  hover:animate-pulse 
           dark:drop-shadow-[0_0_0.3rem_#ffffff] duration-500 ease-in-out'
           src="/vigilant.svg" alt="My SVG file" width={120} height={120}/>
           <Image className=' max-sm:w-20 duration-500 hover:animate-pulse
@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
 
     </div>
-        <div className=' dark:drop-shadow-[0_0_0.1rem_#ffffff70] w-full flex animate-bounce align-bottom  justify-center text-center '>
+        <div className=' my-28 dark:drop-shadow-[0_0_0.1rem_#ffffff70] w-full flex animate-bounce align-bottom  justify-center text-center '>
             <Image src='/scroll-down.svg' alt='scroll down' width={50} height={50}/>
         </div>
     </div>
