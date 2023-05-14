@@ -25,7 +25,7 @@ export default function Hero() {
             SAIBA MAIS</button></a>
         </div>
 
-        <div className=' flex flex-col my-10 justify-center items-center text-center p-6'>
+        <div className=' flex flex-col my-10 mx-1 justify-center items-center text-center'>
           <div className='animate-fade-in-up flex flex-row space-x-10'>
           <Image className=' max-sm:w-20  shadow-cyan-500/50  hover:animate-pulse 
           dark:drop-shadow-[0_0_0.2rem_#ffffff70] duration-500 ease-in-out'
