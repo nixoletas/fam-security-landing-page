@@ -5,7 +5,7 @@ import About from './components/about'
 import Contact from './components/contact'
 import Services from './components/services'
 import Arrow from './components/Arrow'
-
+'use strict'
 
 export default function Home() {
   return (
@@ -14,6 +14,9 @@ export default function Home() {
       <Hero />
       <Arrow />
       <Presentation />
+      <About />
+      <Services />
+      <Contact />
     </>
   )
 }
