@@ -5,7 +5,7 @@ import About from './components/about'
 import Contact from './components/contact'
 import Services from './components/services'
 import Arrow from './components/Arrow'
-'use strict'
+'use client'
 
 export default function Home() {
   return (
