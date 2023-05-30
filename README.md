@@ -11,5 +11,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Can Somebody help? Why am i using Next.js? Why is it slow?
