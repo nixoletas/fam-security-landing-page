@@ -1,9 +1,10 @@
-'use client'
-
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 export default function Contact() {
     return (
+        <>
+        <Navbar/>
         <section className='text-7xl p-6 text-white h-screen'>
             <div id='contact' className='w-full h-20'></div>
             <h1 className="animate-fade-in-down mb-20">Entre em contato</h1>
@@ -16,5 +17,6 @@ Telefone: (11) 2959-2079
 </h2>
 </div>
         </section>
+        </>
     )
 }

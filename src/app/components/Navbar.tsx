@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -17,13 +15,13 @@ export default function Navbar(){
         blur-backdrop-filter
         p-2 fixed">
             <div>
-                <a href='#home'>
+                <Link href='/'>
                 <Image
                 className='ml-2 cursor-pointer duration-300
                 dark:drop-shadow-[0_0_0.4rem_#000000]' 
                 src='https://www.famsecurity.com.br/wp-content/uploads/logotipo-1.png' alt='' 
                 width={120} height={95} priority={true} />
-                </a>
+                </Link>
             </div>
             <ul className=' max-md:hidden flex row text-2xl font-extralight mr-5 space-x-10'>
                 <li className=' text-white hover:text-blue-600 hover:font-black 
@@ -36,7 +34,7 @@ export default function Navbar(){
                 </li>
                 <li className=' text-white hover:text-amber-500 hover:font-black 
                 duration-200 ease-out'>
-                    <a href='#contact'>Contact Us</a>
+                    <Link href='/contact'>Contact Us</Link>
                 </li>
                 <li className=' text-white hover:text-green-600 hover:font-black 
                 duration-200 ease-in-out'>
