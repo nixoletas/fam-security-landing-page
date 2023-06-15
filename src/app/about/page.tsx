@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function About() {
     return (
         <section className='mt-10 text-9xl p-6 text-white h-screen'>

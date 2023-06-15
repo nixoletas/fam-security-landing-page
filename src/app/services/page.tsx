@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Service() {
     return (
     <section className='text-4xl p-6 text-white h-screen'>
