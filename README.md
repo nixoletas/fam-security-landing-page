@@ -10,6 +10,6 @@ yarn dev
 pnpm dev
 ```
 ## DEMO
-Preview: https://fam-security-landing-page-nba8.vercel.app
+Preview: https://fam-security-landing-nixoletas.vercel.app
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
