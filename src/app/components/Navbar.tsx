@@ -26,11 +26,11 @@ export default function Navbar(){
             <ul className=' max-md:hidden flex row text-2xl font-extralight mr-5 space-x-10'>
                 <li className=' text-white hover:text-blue-600 hover:font-black 
                 duration-200 ease-in-out'>
-                    <a href='#home' >Home</a>
+                    <Link href='/' >Home</Link>
                 </li>
                 <li className=' text-white hover:text-yellow-400 hover:font-black 
                 duration-200 ease-in-out'>
-                    <a href='#about'>About Us</a>
+                    <Link href='/about'>About Us</Link>
                 </li>
                 <li className=' text-white hover:text-amber-500 hover:font-black 
                 duration-200 ease-out'>
@@ -38,7 +38,7 @@ export default function Navbar(){
                 </li>
                 <li className=' text-white hover:text-green-600 hover:font-black 
                 duration-200 ease-in-out'>
-                    <a href='#services'>Services</a>
+                    <Link href='/services'>Services</Link>
                 </li>
             </ul>
         </nav>

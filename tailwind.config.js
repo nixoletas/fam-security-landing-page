@@ -12,63 +12,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'FiraCode': ['Fira Code', 'monospace'],
-        'sans': ['Inter', 'sans-serif'],
-        'serif': ['Merriweather', 'serif'],
-        'trebuchet': ['Trebuchet MS', 'sans-serif'],
-        'antimatrix' : ['Antimatrix ', 'sans-serif'],
       },
       colors: {
         'darkblue': '#000033',
-      },
-      animation: {
-        'going-up': 'going-up 15s linear infinite',
-        'fade-in-down': 'fade-in-down 1s ease-in-out',
-        'fade-in-up': 'fade-in-up 1s ease-in-out',
-        'tilt' : 'tilt 10s infinite linear',
-        tilt : 'tilt 10s infinite linear',
-        'gradient-change' : 'gradientChange 3s infinite linear',
-        gradientchange : 'gradientchange 10s infinite linear',
-      },
-      keyframes: {
-        'going-up': {
-          '0%': { 
-            transform: 'translateY(100vh)',
-          },
-          '100%': {
-            transform: 'translateY(-20vh)',
-          },
-        },
-        'gradient-change': {
-          '-webkit-animation': 'AnimationName 3s ease infinite',
-    '-moz-animation' : 'AnimationName 3s ease infinite',
-    'animation': 'AnimationName 3s ease infinite',
-          '0%, 100%': {
-            'background-position': '0% 50%',
-          },
-          '50%': {
-            'background-position': '100% 50%',
-          },
-        },
-        'fade-in-down': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(-20px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
-        },
-        'fade-in-up': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(30px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
-        },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
