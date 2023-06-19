@@ -19,7 +19,7 @@ export default function Navbar(){
                 <Link href='/'>
                 <Image
                 className='ml-2 cursor-pointer duration-300
-                dark:drop-shadow-[0_0_0.4rem_#000000]' 
+                dark:drop-shadow-[0_0_0.4rem_#000000] hover:scale-110' 
                 src='https://www.famsecurity.com.br/wp-content/uploads/logotipo-1.png' alt='' 
                 width={120} height={95} priority={true} />
                 </Link>

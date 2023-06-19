@@ -23,48 +23,8 @@ html {
     min-width: 100vw;
   }
 
-    @keyframes gradient {
-        0% {
-        background-position: 0% 50%;
-        }
-        50% {
-        background-position: 70% 50%;
-        }
-        100% {
-        background-position: 0% 50%;
-        }
-    }
-
-    .gradient-text {
-        background: linear-gradient(0deg, #000000 0%, #fc0000 50%, #ffe600 100%);
-        animation: gradient 60s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .gradient-vigilant {
-        background: linear-gradient(45deg, #ff0000 0%, #000281 50%, #1100ff 100%);
-        animation: gradient 60s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .gradient-matrix {
-        background: linear-gradient(180deg, #00ff22 0%, #0b8100 50%, #000300 100%);
-        animation: gradient 60s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
     .gradient-light {
         background: linear-gradient(90deg, #ffe600 0%, #ff7300 100%);
-        animation: gradient 60s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .gradient-yellow {
-        background: linear-gradient(90deg, #a59821 0%, #ffee00 100%);
         animation: gradient 60s ease infinite;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
