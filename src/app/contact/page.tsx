@@ -74,7 +74,6 @@ export default function Contact() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className='bg-gradient-to-r from-cyan-950 to-blue-800 w-full p-2 rounded-md border border-gray-400'
-                rows='5'
                 required
               />
             </div>
