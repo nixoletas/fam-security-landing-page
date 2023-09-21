@@ -9,33 +9,43 @@
 
 html {
     overflow-x: hidden;
-    overflow:visible;
+    background-color: black;
 }
 
 body {
     background: linear-gradient(45deg, #01010c 0%, #071130 50%, #000522 100%);
     background-size: 300% 300%;
     animation: gradient 60s ease infinite;
-    overflow-x:hidden;
+    overflow-x: hidden;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+    max-width: 100%; /* Ensure content doesn't surpass screen width */
+    margin: 0 auto; /* Center the content horizontally */
+    overflow-y: auto; /* Enable vertical scrolling when needed */
+}
 
-    .gradient-light {
-        background: linear-gradient(90deg, #ffe600 0%, #ff7300 100%);
-        animation: gradient 60s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+/* Add this to your CSS */
+.content-container {
+    overflow-y: visible;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.gradient-light {
+    background: linear-gradient(90deg, #ffe600 0%, #ff7300 100%);
+    animation: gradient 60s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
-
-
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
+    50% {
+        background-position: 100% 50%;
     }
+    100% {
+        background-position: 0% 50%;
+    }
+}

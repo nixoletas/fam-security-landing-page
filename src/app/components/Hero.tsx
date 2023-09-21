@@ -5,7 +5,7 @@ export default function Hero() {
     return(
         <>
         <div id='home' className='h-24'></div>
-    <div className='h-screen'>
+    <div className='h-96'>
     <div className=''>
       <div className='
      text-slate-400'>
