@@ -17,7 +17,7 @@ export default function Navbar() {
         bg-black/50
         w-full
         top-0
-        z-50
+        z-0
         flex
         justify-between
         items-center
@@ -31,12 +31,12 @@ export default function Navbar() {
               width={120} height={95} priority={true} />
           </Link>
         </div>
-        <div className='min-md:hidden'>
-          <button onClick={toggleMenu} className='text-white text-3xl p-2 focus:outline-none'>
+        <div className='min-md:hidden justify-end'>
+          <button onClick={toggleMenu} className='text-white text-3xl p-2 flex text-right justify-end focus:outline-none'>
             ☰
           </button>
         </div>
-        <ul className={`min-md:flex ${menuOpen ? 'block' : 'hidden'} text-lg`}>
+        <ul className={`min-xl:flex ${menuOpen ? 'block' : 'hidden'}`}>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
             <Link href='/' >Home</Link>
           </li>

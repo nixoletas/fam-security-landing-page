@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
         <Navbar/>
-        <div className='mt-10 text-9xl p-6 text-white h-screen'>
+        <div className=' text-9xl p-6 text-white h-screen'>
             <div id='about' className='w-full h-28'></div>
             <div className="bg-gradient-to-r from-cyan-950  to-blue-700 borde rounded-2xl">
             <h1 className="p-4 max-sm:text-3xl animate-fade-in-down text-6xl ">Somos a FAM Security</h1>
