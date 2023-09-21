@@ -7,12 +7,12 @@
     -webkit-backdrop-filter: blur(10px);
 }
 
-  body {
+  html, body {
     background: linear-gradient(45deg, #01010c 0%, #071130 50%, #000522 100%);
     background-size: 300% 300%;
     animation: gradient 60s ease infinite;
     background-attachment: fixed;
-    overflow-x: hidden;
+    overflow-x:hidden;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-width: 100vw;
   }
