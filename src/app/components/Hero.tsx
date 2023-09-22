@@ -4,13 +4,13 @@ import Image from "next/image";
 export default function Hero() {
     return(
         <>
-        <div id='home' className='h-24'></div>
-    <div className='h-96'>
+    <div id='home' className='h-24 overflow-y-hidden'></div>
+    <div className='h-96 overflow-y-hidden'>
     <div className=''>
       <div className='
      text-slate-400'>
         <div className=' mt-2  flex flex-col 
-        items-center text-center'>
+        items-center text-center overflow-y-hidden'>
           <h1 className='text-3xl max-sm:text-2xl text-white font-black uppercase'>
             <span className=''>vigilância</span>,
             <span className=''> tecnologia </span>
