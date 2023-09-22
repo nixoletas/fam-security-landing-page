@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <>
-      <nav className="flex bg-gradient-to-r from-blue-900  to-blue-950 rounded-t-3xl  backdrop-blur-sm  pt-20 mt-10">
+      <nav className="flex bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm  pt-20 mt-10">
         <div className='p-6'>
           <Link href='/'>
             <Image

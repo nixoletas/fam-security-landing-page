@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000b1a;
+    border-radius: 5px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000c24;
+    border-radius: 5px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000a41;
+}
+
 .blur-backdrop-filter {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
