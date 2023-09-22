@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { fa } from 'fontawesome';
-import 'fontawesome';
 
 export default function Hero() {
     return(
         <>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+      
     <div id='home' className='h-24 overflow-y-hidden'></div>
     <div className='h-96 overflow-y-hidden'>
     <div className=''>
