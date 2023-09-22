@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { fa } from 'fontawesome';
+import 'fontawesome';
 
 export default function Hero() {
     return(
@@ -19,10 +21,10 @@ export default function Hero() {
           <p className='text-lg font-bold font-sans  text-gray3 uppercase'>segurança, 
           parceria e confiança.</p>
           <div>
-          <button className='shadow-cyan-500/50 flex flex-col bg-slate-950
-          hover:bg-blue-950 text-white font-bold uppercase p-4 rounded-md hover:rounded-xl mt-4 
-          text-sm hover:text-base animate-pulse duration-300 ease-in-out'>
-            SAIBA MAIS</button></div>
+            <a href="https://api.whatsapp.com/send?phone=5511989184515">
+          <button className=' shadow-cyan-500/50 flex gap-2 
+        bg-blue-950 text-white font-bold uppercase p-4 rounded-md hover:rounded-xl mt-4 
+          text-sm hover:text-base animate-pulse duration-300 ease-in-out'>SAIBA MAIS<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
         </div>
 
         <div className=' flex flex-col my-10 mx-1 justify-center items-center text-center'>

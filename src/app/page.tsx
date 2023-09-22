@@ -5,6 +5,7 @@ import Section from './components/Section'
 import Fazemos from './components/Fazemos'
 import Footer from './components/Footer'
 
+
 export default function Home() {
   return (
     <>
