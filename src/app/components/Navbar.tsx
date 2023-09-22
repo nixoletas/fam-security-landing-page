@@ -43,7 +43,7 @@ export default function Navbar() {
           bg-black/50
           w-full
           top-0
-          z-0
+          z-50
           flex
           justify-between
           items-center
