@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
 
         <div className=' flex flex-col my-10 mx-1 justify-center items-center text-center'>
-          <div className='flex flex-row space-x-10 pointer-events-none'>
+          <div className=' animate-pulse flex flex-row space-x-10 pointer-events-none'>
           <Image className='max-sm:w-24  shadow-cyan-500/50   
           dark:drop-shadow-[0_0_0.3rem_#ffffff] cursor-pointer hover:scale-110 duration-300 ease-in-out'
           src="/vigilant.svg" alt="My SVG file" width={120} height={120}/>
