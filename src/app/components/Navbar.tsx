@@ -62,7 +62,8 @@ export default function Navbar() {
             />
           </Link>
         </div>
-        <div className='min-md:hidden justify-end'>
+
+        <div className=' md:hidden lg:hidden xl:hidden justify-end'>
           <button
             onClick={toggleMenu}
             className='text-white text-3xl p-2 flex text-right justify-end focus:outline-none'
@@ -70,18 +71,34 @@ export default function Navbar() {
             ☰
           </button>
         </div>
-        <ul className={`min-xl:flex ${menuOpen ? 'block' : 'hidden'}`}>
+
+        <ul className='hidden md:flex lg:flex text-xl space-x-4 pr-6'>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
             <Link href='/'>Home</Link>
           </li>
           <li className=' text-white hover:text-yellow-400 hover:font-black duration-200 ease-in-out'>
-            <Link href='/about'>About Us</Link>
+            <Link href='/about'>Sobre nós</Link>
           </li>
           <li className=' text-white hover:text-amber-500 hover:font-black duration-200 ease-out'>
-            <Link href='/contact'>Contact Us</Link>
+            <Link href='/contact'>Contate-nos</Link>
           </li>
           <li className=' text-white hover:text-green-600 hover:font-black duration-200 ease-in-out'>
-            <Link href='/services'>Services</Link>
+            <Link href='/services'>Serviços</Link>
+          </li>
+        </ul>
+
+        <ul className={`md:hidden min-xl:flex ${menuOpen ? 'block' : 'hidden'}`}>
+          <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
+            <Link href='/'>Home</Link>
+          </li>
+          <li className=' text-white hover:text-yellow-400 hover:font-black duration-200 ease-in-out'>
+            <Link href='/about'>Sobre nós</Link>
+          </li>
+          <li className=' text-white hover:text-amber-500 hover:font-black duration-200 ease-out'>
+            <Link href='/contact'>Contate-nos</Link>
+          </li>
+          <li className=' text-white hover:text-green-600 hover:font-black duration-200 ease-in-out'>
+            <Link href='/services'>Serviços</Link>
           </li>
         </ul>
       </nav>
