@@ -16,13 +16,13 @@
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #000c24;
+    background: #001642;
     border-radius: 5px;
 }
   
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #000a41;
+    background: #000c4e;
 }
 
 .blur-backdrop-filter {
