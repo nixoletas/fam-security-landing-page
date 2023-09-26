@@ -62,6 +62,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.gradient-lightArrow {
+    background: linear-gradient(90deg, #009196 0%, #0041b9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;

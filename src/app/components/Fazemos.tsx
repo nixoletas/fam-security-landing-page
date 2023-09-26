@@ -1,13 +1,14 @@
 import Image from "next/image"
+import Gripline from "./Gripline"
 
 export default function Fazemos(){
     return(
         <div className="h-full text-slate-50 flex justify-center  text-center">
             <div className="max-w-screen-lg mx-4 text-center">
                 <h1 className="uppercase max-sm:text-3xl text-4xl font-FiraCode p-4 font-bold pb-56">O que fazemos?</h1>
-                <i className="text-6xl pb-32 animate-bounce fa-solid fa-arrow-down"></i>
+                <i className="text-6xl  text-cyan-600 pb-32 animate-bounce fa-solid fa-arrow-down"></i>
                 <div className="font-FiraCode">
-                    <div className="mb-24">
+                    <div className="">
                         <div className="flex flex-col items-center">
                             <p className="p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 VIGILÂNCIA
@@ -25,10 +26,11 @@ export default function Fazemos(){
                         <p className="font-semibold max-sm:text-lg text-2xl">
                         VSPP
                         </p>
-                        <p className="px-6 pb-12 ">Trabalhamos na prevenção, pois nosso foco é evitar os possíveis eventos de risco. Nossos serviços atendem executivos, autoridades e pessoas públicas garantindo segurança e proteção ao longo do dia ou em eventos específicos.</p>
+                        <p className="px-6">Trabalhamos na prevenção, pois nosso foco é evitar os possíveis eventos de risco. Nossos serviços atendem executivos, autoridades e pessoas públicas garantindo segurança e proteção ao longo do dia ou em eventos específicos.</p>
                     </div>
+                    <Gripline/>
                     
-                    <div className="mb-12">
+                    <div>
                         <div className="flex flex-col items-center">
                             <p className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 tecnologia
@@ -51,12 +53,13 @@ export default function Fazemos(){
                     <p className="font-semibold max-sm:text-lg text-2xl">
                     Mensageria Digital
                     </p>
-                    <p className="px-6 pb-12 ">Rastreamento de encomendas com registro desde o recebimento até a entrega, avisos automáticos de chegada da encomenda e protocolos armazenados de forma digital e segura.</p>
+                    <p className="px-6">Rastreamento de encomendas com registro desde o recebimento até a entrega, avisos automáticos de chegada da encomenda e protocolos armazenados de forma digital e segura.</p>
                     </div>
 
 
 
                     <div>
+                    <Gripline/>
                         <div className="flex flex-col items-center">
                             <p className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 facilities
