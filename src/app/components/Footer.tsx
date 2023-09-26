@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <>
-      <nav className="flex bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm  pt-20 mt-10">
+      <nav className="flex bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm  pt-20">
         <div className='p-6'>
           <Link href='/'>
             <Image
@@ -22,22 +22,28 @@ export default function Footer() {
               width={120} height={95} priority={true} />
           </Link>
         </div>
-        <div className=''>
+        <div className='p-4'>
         </div>
-        <ul className=''>
+        <ul className=' px-4 text-center'>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
-            <Link href='/' >Home</Link>
+            <Link href='/' ><i className="fa-solid fa-house"></i></Link>
           </li>
           <li className=' text-white hover:text-yellow-400 hover:font-black duration-200 ease-in-out'>
-            <Link href='/about'>About Us</Link>
+            <Link href='/about'><i className="fa-solid fa-info"></i></Link>
           </li>
           <li className=' text-white hover:text-amber-500 hover:font-black duration-200 ease-out'>
-            <Link href='/contact'>Contact Us</Link>
-          </li>
-          <li className=' text-white hover:text-green-600 hover:font-black duration-200 ease-in-out'>
-            <Link href='/services'>Services</Link>
+            <Link href='/contact'><i className="fa-solid fa-phone"></i></Link>
           </li>
         </ul>
+
+        <div>
+        <h2 className='text-sm text-cyan-200'>
+            Alameda Afonso Schmidt, 508
+            Santa Terezinha. <br></br> São Paulo/SP
+            CEP 02450-001. <br></br>
+            Telefone: (11) 2959-2079
+          </h2>
+        </div>
       </nav>
     </>
   )
