@@ -7,7 +7,7 @@ export default function Hero() {
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
       
     <div id='home' className='h-24 overflow-y-hidden'></div>
-    <div className='h-96 overflow-y-hidden'>
+    <div className='h-full overflow-y-hidden'>
     <div className=''>
       <div className='
      text-slate-400'>
@@ -23,11 +23,11 @@ export default function Hero() {
           <div>
             <a href="https://api.whatsapp.com/send?phone=5511989184515">
           <button className=' shadow-cyan-500/50 flex gap-2 
-        bg-blue-950 text-white font-bold uppercase p-4 rounded-md hover:rounded-xl mt-4 
-          text-sm hover:text-base animate-pulse duration-300 ease-in-out'>SAIBA MAIS<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
+        bg-blue-950 text-white font-bold uppercase p-4 rounded-md hover:rounded-xl mt-8 
+          text-sm hover:text-base animate-pulse duration-300 ease-in-out '>SAIBA MAIS<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
         </div>
 
-        <div className=' flex flex-col my-10 mx-1 justify-center items-center text-center'>
+        <div className='flex flex-col my-20 mx-1 justify-center items-center text-center'>
           <div className=' animate-pulse flex flex-row space-x-10 '>
           <Image className='max-sm:w-24  shadow-cyan-500/50   
           dark:drop-shadow-[0_0_0.3rem_#ffffff] cursor-pointer hover:scale-110 duration-300 ease-in-out'

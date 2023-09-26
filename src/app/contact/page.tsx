@@ -29,8 +29,8 @@ export default function Contact() {
         <div className='flex-col justify-center items-center'>
           <h2 className='text-xl'>
             Alameda Afonso Schmidt, 508
-            Santa Terezinha São Paulo/SP
-            CEP 02450-001
+            Santa Terezinha. <br></br> São Paulo/SP
+            CEP 02450-001.
           </h2>
           <h2 className='text-xl'>Telefone: (11) 2959-2079</h2>
 
@@ -46,7 +46,7 @@ export default function Contact() {
                 name='name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className='bg-gradient-to-r from-cyan-950 to-blue-800 w-full p-2 rounded-md border border-gray-400'
+                className='uppercase bg-gradient-to-r from-cyan-950 to-blue-800 w-full p-2 rounded-md border border-gray-400'
                 required
               />
             </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                 name='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className='bg-gradient-to-r from-cyan-950 to-blue-800 w-full p-2 rounded-md border border-gray-400'
+                className='lowercase bg-gradient-to-r from-cyan-950 to-blue-800 w-full p-2 rounded-md border border-gray-400'
                 required
               />
             </div>
