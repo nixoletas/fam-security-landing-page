@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <>
-      <nav className="flex bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm  pt-20">
+      <nav className="flex bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm  py-10">
         <div className='p-6'>
           <Link href='/'>
             <Image
@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
         <div className='p-4'>
         </div>
-        <ul className=' px-4 text-center'>
+        <ul className='text-xl flex flex-col justify-center gap-2 px-24 pr-32 text-center'>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
             <Link href='/' ><i className="fa-solid fa-house"></i></Link>
           </li>
@@ -37,7 +37,7 @@ export default function Footer() {
         </ul>
 
         <div>
-        <h2 className='text-sm text-cyan-200'>
+        <h2 className='text-sm flex justify-end text-right text-cyan-200'>
             Alameda Afonso Schmidt, 508
             Santa Terezinha. <br></br> São Paulo/SP
             CEP 02450-001. <br></br>
