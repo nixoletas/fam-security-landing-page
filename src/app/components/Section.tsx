@@ -9,13 +9,19 @@ export default function Section(){
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
+                    entry.target.classList.add('ToUpAnimate');
                 }
             })
         });
     
         const hiddenElements = document.querySelectorAll('.hided');
         hiddenElements.forEach((el) => observer.observe(el));
+
+        
+      const FooterElements = document.querySelectorAll('.ToUp');
+      FooterElements.forEach((el) => observer.observe(el));
       });
+
 
     return(
         <>

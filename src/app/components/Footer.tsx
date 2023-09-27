@@ -1,10 +1,23 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Footer() {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('ToUpAnimate');
+            }
+        })
+    });
+
+    const hiddenElements = document.querySelectorAll('.ToUp');
+    hiddenElements.forEach((el) => observer.observe(el));
+  });
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,9 +26,10 @@ export default function Footer() {
 
   return (
     <>
+    <div className='overflow-hidden'>
       <nav className=" h-32 flex justify-center items-center w-screen bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm">
 
-        <ul className='text-center text-xl flex flex-col justify-center px-4'>
+        <ul className='ToUp text-center text-xl flex flex-col justify-center px-4'>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
             <Link href='/' ><i className="fa-solid fa-house"></i></Link>
           </li>
@@ -27,7 +41,7 @@ export default function Footer() {
           </li>
         </ul>
 
-        <div>
+        <div className='ToUp'>
         <h2 className='text-sm max-sm:text-xs flex justify-end text-right text-cyan-200'>
             Alameda Afonso Schmidt, 508
             Santa Terezinha. <br></br> São Paulo/SP
@@ -36,6 +50,7 @@ export default function Footer() {
           </h2>
         </div>
       </nav>
+      </div>
     </>
   )
 }

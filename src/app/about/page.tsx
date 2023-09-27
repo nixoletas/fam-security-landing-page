@@ -5,9 +5,10 @@ import Footer from "../components/Footer";
 export default function About() {
     return (
         <>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         <Navbar/>
         <div className="flex justify-center">
-        <div className='text-9xl p-6 text-white h-screen max-w-screen-lg justify-center text-center'>
+        <div className='text-9xl p-6 text-white max-w-screen-lg justify-center text-center'>
             <div id='about' className=' h-28 justify-center text-center'>    
             </div>
             <div className="rounded-2xl">

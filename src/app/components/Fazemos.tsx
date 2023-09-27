@@ -1,14 +1,31 @@
+'use client'
+
 import Image from "next/image"
 import Gripline from "./Gripline"
+import { useEffect } from "react";
 
 export default function Fazemos(){
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('FadeAnimate');
+                }
+            })
+        });
+    
+        const hiddenElements = document.querySelectorAll('.Fade');
+        hiddenElements.forEach((el) => observer.observe(el));
+      });
+      
     return(
         <div id="vigilant" className="h-full text-slate-50 flex justify-center text-center">
             <div className="max-w-screen-lg mx-4 text-center">
                 <h1 className="uppercase max-sm:text-3xl text-4xl font-FiraCode p-4 font-bold pb-56">O que fazemos?</h1>
                 <i className="text-6xl  text-cyan-600 pb-32 animate-bounce fa-solid fa-arrow-down"></i>
                 <div className="font-FiraCode">
-                    <div className="">
+                    <div className="Fade">
                         <div className="flex flex-col items-center">
                             <p className="p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 VIGILÂNCIA
@@ -31,7 +48,7 @@ export default function Fazemos(){
                     <Gripline/>
                     
                     <div id="technology">
-                        <div className="flex flex-col items-center">
+                        <div className="Fade flex flex-col items-center">
                             <p className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 tecnologia
                             </p>
@@ -60,7 +77,7 @@ export default function Fazemos(){
 
                     <div id="facilities">
                     <Gripline/>
-                        <div className="flex flex-col items-center">
+                        <div className="Fade flex flex-col items-center">
                             <p className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 facilities
                             </p>

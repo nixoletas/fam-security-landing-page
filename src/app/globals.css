@@ -100,3 +100,26 @@ body {
     transform: translateX(0);
 }
 
+.ToUp {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 0.8s;
+    transform: translateY(100%);
+}
+
+.ToUpAnimate {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+
+.Fade {
+    opacity: 1;
+    filter: blur(15px);
+    transition: all 1s;
+}
+
+.FadeAnimate {
+    opacity: 1;
+    filter: blur(0px);
+}
