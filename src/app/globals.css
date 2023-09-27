@@ -116,7 +116,7 @@ body {
 .Fade {
     opacity: 1;
     filter: blur(15px);
-    transition: all 1s;
+    transition: all 0.7s;
 }
 
 .FadeAnimate {
