@@ -41,11 +41,8 @@ body {
     background-size: 300% 300%;
     animation: gradient 60s ease infinite;
     overflow-x: hidden;
-    height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 100%; /* Ensure content doesn't surpass screen width */
-    margin: 0 auto; /* Center the content horizontally */
-    overflow-y: auto; /* Enable vertical scrolling when needed */
 }
 
 .fam-security {
