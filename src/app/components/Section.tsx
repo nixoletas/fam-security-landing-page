@@ -1,6 +1,16 @@
+'use client'
+
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export default function Section(){
+
+    const {ref, inView, entry} = useInView({
+        threshold: 0,
+        triggerOnce: true,
+        
+    });
+
     return(
         <>
             <div className="h-full w-screen items-center text-slate-50 flex justify-center flex-col text-center">

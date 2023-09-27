@@ -13,18 +13,9 @@ export default function Footer() {
 
   return (
     <>
-      <nav className="flex w-screen bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm  py-10">
-        <div className='max-sm:hidden items-center px-4'>
-          <Link href='/'>
-            <Image
-              className='ml-2 cursor-pointer duration-300 dark:drop-shadow-[0_0_0.4rem_#000000] hover:scale-110'
-              src='https://www.famsecurity.com.br/wp-content/uploads/logotipo-1.png' alt=''
-              width={120} height={95} priority={true} />
-          </Link>
-        </div>
-        <div className='max-sm:py-6 p-4'>
-        </div>
-        <div className='flex absolute right-4'>
+      <nav className="h-32 w-screen bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm">
+
+        <div className='h-32 flex gap-6 items-center justify-center'>
         <ul className='text-center text-xl flex flex-col justify-center px-4'>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
             <Link href='/' ><i className="fa-solid fa-house"></i></Link>
@@ -46,6 +37,7 @@ export default function Footer() {
           </h2>
         </div>
         </div>
+
       </nav>
     </>
   )
