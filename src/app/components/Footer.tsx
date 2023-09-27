@@ -13,9 +13,8 @@ export default function Footer() {
 
   return (
     <>
-      <nav className="h-32 w-screen bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm">
+      <nav className=" h-32 flex justify-center items-center w-screen bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm">
 
-        <div className='h-32 flex gap-6 items-center justify-center'>
         <ul className='text-center text-xl flex flex-col justify-center px-4'>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
             <Link href='/' ><i className="fa-solid fa-house"></i></Link>
@@ -29,15 +28,13 @@ export default function Footer() {
         </ul>
 
         <div>
-        <h2 className='text-sm flex justify-end text-right text-cyan-200'>
+        <h2 className='text-sm max-sm:text-xs flex justify-end text-right text-cyan-200'>
             Alameda Afonso Schmidt, 508
             Santa Terezinha. <br></br> São Paulo/SP
             CEP 02450-001. <br></br>
             Telefone: (11) 2959-2079
           </h2>
         </div>
-        </div>
-
       </nav>
     </>
   )

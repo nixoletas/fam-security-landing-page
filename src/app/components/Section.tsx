@@ -8,7 +8,7 @@ export default function Section(){
     const {ref, inView, entry} = useInView({
         threshold: 0,
         triggerOnce: true,
-        
+
     });
 
     return(
