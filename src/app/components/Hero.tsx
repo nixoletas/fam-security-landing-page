@@ -29,15 +29,24 @@ export default function Hero() {
 
         <div className='flex flex-col my-20 mx-1 justify-center items-center text-center'>
           <div className=' animate-pulse flex flex-row space-x-10 '>
+            <a href="/#vigilant">
           <Image className='max-sm:w-24  shadow-cyan-500/50   
           dark:drop-shadow-[0_0_0.3rem_#ffffff] cursor-pointer hover:scale-110 duration-300 ease-in-out'
           src="/vigilant.svg" alt="My SVG file" width={120} height={120}/>
+          </a>
+
+          <a href="/#technology">
           <Image className=' max-sm:w-20 
           dark:drop-shadow-[0_0_0.3rem_#ffffff] cursor-pointer hover:scale-110 duration-300 ease-in-out' 
           src="/technology.svg" alt="My SVG file" width={120} height={120}/>
+          </a>
+
+          <a href="/#facilities">
           <Image className='max-sm:w-20 
           dark:drop-shadow-[0_0_0.3rem_#ffffff] cursor-pointer hover:scale-110 duration-300 ease-in-out' 
           src="/facilities.svg" alt="My SVG file" width={120} height={120}/>
+          </a>
+
           </div>
         </div>
 

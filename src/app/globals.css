@@ -89,11 +89,9 @@ body {
 
 .hided {
     opacity: 0;
-    filter: blur(5px);
-    transition: all 0.5s;
+    filter: blur(10px);
+    transition: all 0.8s;
     transform: translateX(-100%);
-
-    
 }
 
 .show {
@@ -101,3 +99,4 @@ body {
     filter: blur(0px);
     transform: translateX(0);
 }
+

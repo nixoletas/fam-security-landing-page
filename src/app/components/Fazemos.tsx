@@ -3,7 +3,7 @@ import Gripline from "./Gripline"
 
 export default function Fazemos(){
     return(
-        <div id="services"className="h-full text-slate-50 flex justify-center text-center">
+        <div id="vigilant" className="h-full text-slate-50 flex justify-center text-center">
             <div className="max-w-screen-lg mx-4 text-center">
                 <h1 className="uppercase max-sm:text-3xl text-4xl font-FiraCode p-4 font-bold pb-56">O que fazemos?</h1>
                 <i className="text-6xl  text-cyan-600 pb-32 animate-bounce fa-solid fa-arrow-down"></i>
@@ -30,7 +30,7 @@ export default function Fazemos(){
                     </div>
                     <Gripline/>
                     
-                    <div>
+                    <div id="technology">
                         <div className="flex flex-col items-center">
                             <p className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 tecnologia
@@ -58,7 +58,7 @@ export default function Fazemos(){
 
 
 
-                    <div>
+                    <div id="facilities">
                     <Gripline/>
                         <div className="flex flex-col items-center">
                             <p className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">

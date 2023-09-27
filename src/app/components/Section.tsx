@@ -1,15 +1,21 @@
 'use client'
 
-import React from 'react';
-import { useInView } from 'react-intersection-observer';
+import React, { useEffect } from 'react';
 
 export default function Section(){
 
-    const {ref, inView, entry} = useInView({
-        threshold: 0,
-        triggerOnce: true,
-
-    });
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            })
+        });
+    
+        const hiddenElements = document.querySelectorAll('.hided');
+        hiddenElements.forEach((el) => observer.observe(el));
+      });
 
     return(
         <>
@@ -21,7 +27,7 @@ export default function Section(){
                     <i className="gradient-lightArrow text-6xl pb-32 animate-bounce fa-solid fa-arrow-down"></i>
                 </div>
 
-                <div>
+                <div className='hided'>
                     <p className="flex flex-col mx-1 pb-24 sm:text-4xl font-FiraCode font-semibold text-4xl">
                     Garantimos a continuidade <br></br> 
                     da atividade fim.<br></br>
@@ -32,7 +38,7 @@ export default function Section(){
                     </p>
                 </div>
 
-                <div className="pb-24">
+                <div className="hided pb-24">
                     <p className="flex flex-col p-4 px-6 max-sm:text-3xl font-FiraCode font-semibold text-4xl">
                     Buscamos a melhor solução.<br></br>  <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'>VALORIZAMOS A SUA OPINIÃO!</span>
                     </p>
@@ -42,7 +48,7 @@ export default function Section(){
                     </div>
                 </div>
 
-                <div className="pb-24">
+                <div className="hided pb-24">
                     <p className="flex flex-col p-4 px-6 max-sm:text-3xl font-FiraCode font-semibold text-4xl">
             Sua confiança é nosso<br></br> maior objetivo.
                         <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'>
@@ -56,7 +62,7 @@ export default function Section(){
                         </div>
                 </div>
 
-                <div className="pb-48">
+                <div className="hided pb-48">
                     <p className="flex flex-col p-4 px-6 max-sm:text-3xl font-FiraCode font-semibold text-4xl">
             Cumprimos a missão<br></br> independente de qual seja.
                 <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'>
