@@ -20,11 +20,11 @@ export default function Fazemos(){
       });
       
     return(
-        <div id="vigilant" className="h-full text-slate-50 flex justify-center text-center">
+        <div className="h-full text-slate-50 flex justify-center text-center">
             <div className="max-w-screen-lg mx-4 text-center">
                 <h1 className="uppercase max-sm:text-3xl text-4xl font-FiraCode p-4 font-bold pb-56">O que fazemos?</h1>
                 <i className="text-6xl  text-cyan-600 pb-32 animate-bounce fa-solid fa-arrow-down"></i>
-                <div className="font-FiraCode">
+                <div id="vigilant" className="pt-24 font-FiraCode">
                     <div className="Fade">
                         <div className="flex flex-col items-center">
                             <p className="p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
@@ -45,11 +45,11 @@ export default function Fazemos(){
                         </p>
                         <p className="px-6">Trabalhamos na prevenção, pois nosso foco é evitar os possíveis eventos de risco. Nossos serviços atendem executivos, autoridades e pessoas públicas garantindo segurança e proteção ao longo do dia ou em eventos específicos.</p>
                     </div>
-                    <Gripline/>
                     
                     <div id="technology">
+                    <Gripline/>
                         <div className="Fade flex flex-col items-center">
-                            <p className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
+                            <p  className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 tecnologia
                             </p>
                             <Image width="256" height="256" src="https://www.famsecurity.com.br/wp-content/uploads/security-camera-1.png" className="attachment-full size-full" alt="" loading="lazy"/>
