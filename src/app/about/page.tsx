@@ -5,8 +5,9 @@ export default function About() {
     return (
         <>
         <Navbar/>
-        <div className=' text-9xl p-6 text-white h-screen'>
-            <div id='about' className='w-full h-28'>    
+        <div className="flex justify-center">
+        <div className='text-9xl p-6 text-white h-screen max-w-screen-lg justify-center text-center'>
+            <div id='about' className=' h-28 justify-center text-center'>    
             </div>
             <div className="bg-gradient-to-r from-cyan-950  to-blue-700 borde rounded-2xl">
                 <h1 className="p-4 max-sm:text-3xl animate-fade-in-down text-6xl ">
@@ -28,6 +29,7 @@ export default function About() {
             </p>
             </div>
             
+        </div>
         </div>
         </>
     )
