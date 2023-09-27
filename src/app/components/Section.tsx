@@ -1,4 +1,22 @@
+'use client'
+
+import React from 'react';
+
 export default function Section(){
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        })
+    })
+    
+    const hiddenElements = document.querySelectorAll('.hided');
+    hiddenElements.forEach((el) => observer.observe(el));
+    
+    
+    
     return(
         <>
             <div className="h-full w-screen items-center text-slate-50 flex justify-center flex-col text-center">
@@ -9,7 +27,7 @@ export default function Section(){
                     <i className="gradient-lightArrow text-6xl pb-32 animate-bounce fa-solid fa-arrow-down"></i>
                 </div>
 
-                <div>
+                <div className='hided'>
                     <p className="flex flex-col mx-1 pb-24 sm:text-4xl font-FiraCode font-semibold text-4xl">
                     Garantimos a continuidade <br></br> 
                     da atividade fim.<br></br>

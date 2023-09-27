@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Contact() {
   // Define state variables for the form fields
@@ -86,6 +87,7 @@ export default function Contact() {
           </form>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

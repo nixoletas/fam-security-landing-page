@@ -33,6 +33,7 @@
 html {
     overflow-x: hidden;
     background: #071130 50%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -45,6 +46,15 @@ body {
     max-width: 100%; /* Ensure content doesn't surpass screen width */
     margin: 0 auto; /* Center the content horizontally */
     overflow-y: auto; /* Enable vertical scrolling when needed */
+}
+
+.fam-security {
+    background: linear-gradient(90deg, #ffd000 0%, #fbff00 100%);
+    background-size: 500% 500%;
+    animation: gradient 5s ease infinite;
+    -webkit-background-clip: text;
+    max-width: 100%;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Add this to your CSS */
@@ -78,4 +88,19 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.hided {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+
+    
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
 }

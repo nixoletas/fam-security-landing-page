@@ -13,18 +13,19 @@ export default function Footer() {
 
   return (
     <>
-      <nav className="flex bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm  py-10">
-        <div className='p-6'>
+      <nav className="flex w-screen bg-gradient-to-r from-blue-900  to-blue-950  backdrop-blur-sm  py-10">
+        <div className='max-sm:hidden items-center px-4'>
           <Link href='/'>
             <Image
-              className=' ml-2 cursor-pointer duration-300 dark:drop-shadow-[0_0_0.4rem_#000000] hover:scale-110'
+              className='ml-2 cursor-pointer duration-300 dark:drop-shadow-[0_0_0.4rem_#000000] hover:scale-110'
               src='https://www.famsecurity.com.br/wp-content/uploads/logotipo-1.png' alt=''
               width={120} height={95} priority={true} />
           </Link>
         </div>
-        <div className='p-4'>
+        <div className='max-sm:py-6 p-4'>
         </div>
-        <ul className='text-xl flex flex-col justify-center gap-2 px-24 pr-32 text-center'>
+        <div className='flex absolute right-4'>
+        <ul className='text-center text-xl flex flex-col justify-center px-4'>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
             <Link href='/' ><i className="fa-solid fa-house"></i></Link>
           </li>
@@ -43,6 +44,7 @@ export default function Footer() {
             CEP 02450-001. <br></br>
             Telefone: (11) 2959-2079
           </h2>
+        </div>
         </div>
       </nav>
     </>

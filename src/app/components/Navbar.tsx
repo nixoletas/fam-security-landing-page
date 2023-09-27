@@ -83,7 +83,7 @@ export default function Navbar() {
             <Link href='/contact'>Contate-nos</Link>
           </li>
           <li className=' text-white hover:text-green-600 hover:font-black duration-200 ease-in-out'>
-            <Link href='/services'>Serviços</Link>
+            <a href='/#services'>Serviços</a>
           </li>
         </ul>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
             <Link href='/contact'>Contate-nos</Link>
           </li>
           <li className=' text-white hover:text-green-600 hover:font-black duration-200 ease-in-out'>
-            <Link href='/services'>Serviços</Link>
+            <a href='/#services'>Serviços</a>
           </li>
         </ul>
       </nav>

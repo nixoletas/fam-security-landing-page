@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function About() {
     return (
@@ -9,9 +10,12 @@ export default function About() {
         <div className='text-9xl p-6 text-white h-screen max-w-screen-lg justify-center text-center'>
             <div id='about' className=' h-28 justify-center text-center'>    
             </div>
-            <div className="bg-gradient-to-r from-cyan-950  to-blue-700 borde rounded-2xl">
+            <div className="rounded-2xl">
                 <h1 className="p-4 max-sm:text-3xl animate-fade-in-down text-6xl ">
-                    Somos a FAM Security
+                    Somos a <br></br> 
+                    <span className="font-semibold fam-security ">
+                    FAM Security
+                    </span>
                 </h1>
             </div>
             <div className='flex flex-col gap-12 font-sans max-md:text-lg p-4 text-2xl text-justify'>
@@ -31,6 +35,7 @@ export default function About() {
             
         </div>
         </div>
+        <Footer/>
         </>
     )
 }
