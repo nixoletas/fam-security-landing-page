@@ -21,6 +21,23 @@ export default function Contact() {
     console.log('Message:', message);
   };
 
+  const [isCopied, setIsCopied] = useState(false); 
+
+  const copyEmailToClipboard = () => {
+    const emailElement = document.createElement('textarea');
+    emailElement.value = 'contato@famsecurity.com.br';
+    document.body.appendChild(emailElement);
+    emailElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(emailElement);
+
+    setIsCopied(true);
+
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 700);
+  };
+
   return (
     <>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
@@ -36,6 +53,17 @@ export default function Contact() {
             CEP 02450-001.
           </h2>
           <h2 className='text-xl'>Telefone: (11) 2959-2079</h2>
+          <p className='text-lg font-semibold font-FiraCode text-amber-400 '><span
+            onClick={copyEmailToClipboard}
+            style={{ cursor: 'pointer', textDecoration: 'underline' }}
+          >contato@famsecurity.com.br</span></p>
+
+          {/* Notification */}
+        {isCopied && (
+          <div className='bg-green-500 p-2 w-24 text-xs text-white rounded-md '>
+            Email copiado
+          </div>
+        )}
 
           <div>
             <a href="https://api.whatsapp.com/send?phone=5511989184515">
