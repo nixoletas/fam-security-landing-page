@@ -27,7 +27,7 @@ export default function Hero() {
           text-sm hover:text-base animate-pulse duration-300 ease-in-out '>SAIBA MAIS<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
         </div>
 
-        <div className='flex flex-col my-20 mx-1 justify-center items-center text-center'>
+        <div id="heroId" className='flex flex-col my-20 mx-1 justify-center items-center text-center'>
           <div className=' animate-pulse flex flex-row space-x-10 '>
             <a href="/#vigilant">
           <Image className='max-sm:w-24  shadow-cyan-500/50   
