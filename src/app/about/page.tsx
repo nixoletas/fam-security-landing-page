@@ -14,7 +14,7 @@ export default function About() {
             <div className="rounded-2xl">
                 <h1 className="p-4 max-sm:text-3xl animate-fade-in-down text-6xl ">
                     Somos a <br></br> 
-                    <span className="font-semibold fam-security ">
+                    <span className="font-semibold fam-security">
                     FAM Security
                     </span>
                 </h1>

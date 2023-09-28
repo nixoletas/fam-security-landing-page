@@ -26,9 +26,9 @@ export default function Contact() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
     
       <Navbar />
-      <section className='text-7xl p-6 text-white'>
-        <div id='contact' className='w-full h-20'></div>
-        <h1 className='animate-fade-in-down mb-20'>Entre em contato</h1>
+      <section className='text-7xl p-6 mb-2 text-white'>
+        <div id='contact' className='w-full h-24'></div>
+        <h1 className='animate-fade-in-down mb-16'>Entre em contato</h1>
         <div className='flex-col justify-center items-center'>
           <h2 className='text-xl'>
             Alameda Afonso Schmidt, 508
@@ -36,6 +36,12 @@ export default function Contact() {
             CEP 02450-001.
           </h2>
           <h2 className='text-xl'>Telefone: (11) 2959-2079</h2>
+
+          <div>
+            <a href="https://api.whatsapp.com/send?phone=5511989184515">
+          <button className=' shadow-cyan-500/50 flex gap-2 
+        bg-blue-950 text-white font-bold uppercase p-4 rounded-md hover:rounded-xl mt-8 
+          text-sm hover:text-base animate-pulse duration-300 ease-in-out '>WHATSAPP<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
 
           {/* Form */}
           <form onSubmit={handleSubmit} className='max-w-screen-sm mt-4 text-white text-xl'>

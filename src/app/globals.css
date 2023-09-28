@@ -46,9 +46,9 @@ body {
 }
 
 .fam-security {
-    background: linear-gradient(90deg, #ffd000 0%, #fbff00 100%);
+    background: linear-gradient(90deg, #ffbb00 0%, #fbff00 100%);
     background-size: 500% 500%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 1s ease infinite;
     -webkit-background-clip: text;
     max-width: 100%;
     -webkit-text-fill-color: transparent;
@@ -138,22 +138,21 @@ body {
   }
 
   #navBarId {
-    animation: nav 300ms ease-in;
+    animation: nav 300ms;
   }
 
-  @keyframes nav{
-    0% {
-        opacity: 1;
+  .nav {
+    opacity: 1;
         filter:blur(10px);
         transform: translateY(-20px);
         transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    }
-    100% {
-        opacity: 1;
+  }
+
+  .nav.animate {
+    opacity: 1;
         filter: blur(0px);
         transform: translateY(0);
         transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    }
   }
 
   @keyframes hero{

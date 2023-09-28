@@ -35,10 +35,19 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    document.addEventListener("DOMContentLoaded", function () {
+      const animatedElement = document.querySelector(".nav");
+      
+      if (animatedElement) {
+        animatedElement.classList.remove("nav.animate");
+      }
+    });
+  })
+
   return (
     <>
-      <nav id="navBarId"
-      className='bg-black/50 w-full top-0 z-50 flex justify-between items-center blur-backdrop-filter p-2 fixed navbar-enter-active'
+      <nav id="" className=' bg-black/50 w-full top-0 z-50 flex justify-between items-center blur-backdrop-filter p-2 fixed navbar-enter-active'
       >
         <div>
           <Link href='/'>
@@ -72,9 +81,6 @@ export default function Navbar() {
           <li className=' text-white hover:text-amber-500 hover:font-black duration-200 ease-out'>
             <Link href='/contact'>Contate-nos</Link>
           </li>
-          <li className=' text-white hover:text-green-600 hover:font-black duration-200 ease-in-out'>
-            <a href='/#vigilant'>Serviços</a>
-          </li>
         </ul>
 
         <ul className={`md:hidden min-xl:flex ${menuOpen ? 'block' : 'hidden'}`}>
@@ -86,9 +92,6 @@ export default function Navbar() {
           </li>
           <li className=' text-white hover:text-amber-500 hover:font-black duration-200 ease-out'>
             <Link href='/contact'>Contate-nos</Link>
-          </li>
-          <li className=' text-white hover:text-green-600 hover:font-black duration-200 ease-in-out'>
-            <a href='/#vigilant'>Serviços</a>
           </li>
         </ul>
       </nav>
