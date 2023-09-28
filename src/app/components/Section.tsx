@@ -9,17 +9,12 @@ export default function Section(){
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
-                    entry.target.classList.add('ToUpAnimate');
                 }
             })
         });
     
         const hiddenElements = document.querySelectorAll('.hided');
         hiddenElements.forEach((el) => observer.observe(el));
-
-        
-      const FooterElements = document.querySelectorAll('.ToUp');
-      FooterElements.forEach((el) => observer.observe(el));
       });
 
 
@@ -34,7 +29,7 @@ export default function Section(){
                 </div>
 
                 <div className='hided'>
-                    <p className="flex flex-col mx-1 pb-24 sm:text-4xl font-FiraCode font-semibold text-4xl">
+                    <p className="flex flex-col mx-1 pb-12 sm:text-4xl font-FiraCode font-semibold text-4xl">
                     Garantimos a continuidade <br></br> 
                     da atividade fim.<br></br>
                         <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'>
@@ -44,7 +39,7 @@ export default function Section(){
                     </p>
                 </div>
 
-                <div className="hided pb-24">
+                <div className="hided pb-12">
                     <p className="flex flex-col p-4 px-6 max-sm:text-3xl font-FiraCode font-semibold text-4xl">
                     Buscamos a melhor solução.<br></br>  <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'>VALORIZAMOS A SUA OPINIÃO!</span>
                     </p>
@@ -54,7 +49,7 @@ export default function Section(){
                     </div>
                 </div>
 
-                <div className="hided pb-24">
+                <div className="hided pb-12">
                     <p className="flex flex-col p-4 px-6 max-sm:text-3xl font-FiraCode font-semibold text-4xl">
             Sua confiança é nosso<br></br> maior objetivo.
                         <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'>
@@ -68,7 +63,7 @@ export default function Section(){
                         </div>
                 </div>
 
-                <div className="hided pb-48">
+                <div className="hided pb-12">
                     <p className="flex flex-col p-4 px-6 max-sm:text-3xl font-FiraCode font-semibold text-4xl">
             Cumprimos a missão<br></br> independente de qual seja.
                 <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'>
@@ -76,6 +71,22 @@ export default function Section(){
                 </span>
                     </p>
                     <div className="text-4xl flex flex-row justify-center">
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                        </div>
+                </div>
+
+                <div className="hided pb-48">
+                    <p className="flex flex-col p-4 px-6 max-sm:text-3xl font-FiraCode font-semibold text-4xl">
+            Disponibilidade permanente
+                <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'>
+                Estamos com você em todos os momentos!
+                </span>
+                    </p>
+                    <div className="text-4xl flex flex-row justify-center">
+                            <i className="fa-solid fa-star"></i>
                             <i className="fa-solid fa-star"></i>
                             <i className="fa-solid fa-star"></i>
                             <i className="fa-solid fa-star"></i>

@@ -38,27 +38,17 @@ export default function Navbar() {
   return (
     <>
       <nav
-        ref={navbarRef} // Reference to the navbar element
-        className="
-          bg-black/50
-          w-full
-          top-0
-          z-50
-          flex
-          justify-between
-          items-center
-          blur-backdrop-filter
-          p-2 fixed"
+      className='bg-black/50 w-full top-0 z-50 flex justify-between items-center blur-backdrop-filter p-2 fixed'
       >
         <div>
           <Link href='/'>
             <Image
               className='ml-2 cursor-pointer duration-300 dark:drop-shadow-[0_0_0.4rem_#000000] hover:scale-110'
-              src='https://www.famsecurity.com.br/wp-content/uploads/logotipo-1.png'
-              alt=''
+              src='/logotipo-1.png'
+              alt='Logo'
               width={120}
-              height={95}
-              priority={true}
+              height={57}
+              priority={false}
             />
           </Link>
         </div>
