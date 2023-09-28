@@ -37,8 +37,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-      className='bg-black/50 w-full top-0 z-50 flex justify-between items-center blur-backdrop-filter p-2 fixed'
+      <nav id="navBarId"
+      className='bg-black/50 w-full top-0 z-50 flex justify-between items-center blur-backdrop-filter p-2 fixed navbar-enter-active'
       >
         <div>
           <Link href='/'>
