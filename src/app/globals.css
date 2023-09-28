@@ -46,7 +46,7 @@ body {
 }
 
 .fam-security {
-    background: linear-gradient(90deg, #ffbb00 0%, #fbff00 100%);
+    background: linear-gradient(90deg, #ffbb00 0%, #ffffff 100%);
     background-size: 500% 500%;
     animation: gradient 1s ease infinite;
     -webkit-background-clip: text;
