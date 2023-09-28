@@ -43,7 +43,7 @@ export default function Contact() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
     
       <Navbar />
-      <section className='text-7xl px-6 h-screen p-6 mb-2 text-white'>
+      <section className='text-7xl px-6 text-white'>
         <div id='contact' className='w-full h-24'></div>
         <h1 className='animate-fade-in-down mb-16'>Entre em contato</h1>
         <div className='flex-col justify-center items-center'>
@@ -116,7 +116,7 @@ export default function Contact() {
             </div>
             <button
               type='submit'
-              className='bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600'
+              className='bg-blue-500 mb-12 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600'
             >
               Enviar
             </button>
