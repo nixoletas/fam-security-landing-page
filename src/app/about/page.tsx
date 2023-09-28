@@ -1,13 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 export default function About() {
     return (
         <>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         <Navbar/>
-        <div className="flex justify-center">
+
+
+        <div className="flex flex-col justify-center items-center">
         <div className='text-9xl p-6 text-white max-w-screen-lg justify-center text-center'>
             <div id='about' className=' h-28 justify-center text-center'>    
             </div>
@@ -34,6 +37,31 @@ export default function About() {
             </p>
             </div>
             
+        </div>
+
+
+        <div className='max-w-screen-lg mx-4 my-12'>
+        <div id="missao" className="max-md:flex max-md:flex-col max-md:gap-y-12 grid grid-cols-3 text-white font-sans justify-center">
+
+            <div id="heroId" className=" px-2 gap-2 flex flex-col text-clip items-center">
+            <Image width="120" height="120" src="/crescimento.png" alt=""/>
+                <h1 className="font-bold text-2xl ">Missão</h1>
+                <p className=" text-base font-FiraCode">Ser a melhor e mais completa empresa multisserviços do Brasil.</p>
+            </div>
+
+            <div id="heroId" className="gap-2 px-2 flex flex-col text-clip items-center">
+            <Image width="120" height="120" src="/location-1.png" alt=""/>
+                <h1 className="font-bold text-2xl">Visão</h1>
+                <p className="text-sm font-FiraCode">Garantir e contribuir com a sinergia da atividade fim do nosso cliente e o seu continuado apoio com viés na inovação e tecnologia, permitindo a sobrevivência, o crescimento e a perpetuação.</p>
+            </div>
+
+            <div id="heroId" className="gap-2 px-2 flex flex-col text-clip items-center">
+            <Image width="120" height="120" src="/group.png" alt=""/>
+                <h1 className="font-bold text-2xl">Valores</h1>
+                <p className=" text-sm font-FiraCode">Equilíbrio entre Pessoas & Negócios com responsabilidade empresarial em nosso DNA, garantindo excelência, qualidade e eficiência em nossos serviços.</p>
+            </div>
+            </div>
+
         </div>
         </div>
         <Footer/>

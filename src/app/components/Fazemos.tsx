@@ -30,7 +30,7 @@ export default function Fazemos(){
                             <p className="p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 VIGILÂNCIA
                             </p>
-                            <Image width="256" height="256" src="https://www.famsecurity.com.br/wp-content/uploads/police-car.png" className="attachment-full size-full" alt="" loading="lazy"/>
+                            <Image width="256" height="256" src="/police-car.webp" className="attachment-full size-full" alt="" loading="lazy"/>
                         </div>
                         <p className="font-semibold pt-6 max-sm:text-lg text-2xl">
                         Segurança Patrimonial e Escolta Armada
@@ -52,7 +52,7 @@ export default function Fazemos(){
                             <p  className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 tecnologia
                             </p>
-                            <Image width="256" height="256" src="https://www.famsecurity.com.br/wp-content/uploads/security-camera-1.png" className="attachment-full size-full" alt="" loading="lazy"/>
+                            <Image width="256" height="256" src="/security-camera-1.webp" className="attachment-full size-full" alt="" loading="lazy"/>
                         </div>
                     <p className="font-semibold pt-6 max-sm:text-lg text-2xl">
                     CFTV
@@ -81,7 +81,7 @@ export default function Fazemos(){
                             <p className="uppercase p-4 pb-6  max-sm:text-3xl font-semibold text-6xl">
                                 facilities
                             </p>
-                            <Image width="256" height="256" src="https://www.famsecurity.com.br/wp-content/uploads/waitress.png" className="attachment-full size-full" alt="" loading="lazy"/>
+                            <Image width="256" height="256" src="/waitress.webp" className="attachment-full size-full" alt="" loading="lazy"/>
                         </div>
                         <p className="font-semibold pt-6 max-sm:text-lg text-2xl">
                         Portaria e Controle de Acesso
