@@ -73,25 +73,25 @@ export default function Navbar() {
 
         <ul className='hidden md:flex lg:flex text-xl space-x-4 pr-6'>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
-            <Link href='/'>Home</Link>
+            <Link href='/' scroll={true}>Home</Link>
           </li>
           <li className=' text-white hover:text-yellow-400 hover:font-black duration-200 ease-in-out'>
-            <Link href='/about'>Sobre nós</Link>
+            <Link href="/about" scroll={true}>Sobre nós</Link>
           </li>
           <li className=' text-white hover:text-amber-500 hover:font-black duration-200 ease-out'>
-            <Link href='/contact'>Contate-nos</Link>
+            <Link href='/contact' scroll={true}>Contate-nos</Link>
           </li>
         </ul>
 
         <ul className={`md:hidden min-xl:flex ${menuOpen ? 'block' : 'hidden'}`}>
           <li className=' text-white hover:text-blue-600 hover:font-black duration-200 ease-in-out'>
-            <Link href='/'>Home</Link>
+            <Link href='/' scroll={true}>Home</Link>
           </li>
           <li className=' text-white hover:text-yellow-400 hover:font-black duration-200 ease-in-out'>
-            <Link href='/about'>Sobre nós</Link>
+            <Link href='/about' scroll={true}>Sobre nós</Link>
           </li>
           <li className=' text-white hover:text-amber-500 hover:font-black duration-200 ease-out'>
-            <Link href='/contact'>Contate-nos</Link>
+            <Link href='/contact' scroll={true}>Contate-nos</Link>
           </li>
         </ul>
       </nav>

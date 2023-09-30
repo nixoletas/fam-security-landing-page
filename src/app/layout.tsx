@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
 
-      <link rel="icon" href='href="https://www.famsecurity.com.br/wp-content/uploads/favicon.png' sizes='32x32'></link>
+      <link rel="icon" href='/favicon.png' sizes='32x32'></link>
 
-      <link rel="icon" href="https://www.famsecurity.com.br/wp-content/uploads/favicon.png" sizes="192x192">
+      <link rel="icon" href="/favicon.png" sizes="192x192">
       </link>
 
       <body className={inter.className}>
