@@ -11,8 +11,8 @@ export default function Home() {
     <div className='content-container'>
       <Navbar/>
       <Hero/>
-      <Section/>
       <Fazemos />
+      <Section/>
       <Footer />
     </div>
     </>

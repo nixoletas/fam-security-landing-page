@@ -23,8 +23,8 @@ export default function Hero() {
           <div>
             <a href="https://api.whatsapp.com/send?phone=5511989184515">
           <button className=' shadow-cyan-500/50 flex gap-2 
-        bg-blue-950 text-white font-bold uppercase p-4 rounded-md hover:rounded-xl mt-8 
-          text-sm hover:text-base animate-pulse duration-300 ease-in-out '>SAIBA MAIS<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
+        bg-blue-950 font-bold uppercase p-4 rounded-md hover:rounded-xl mt-8 
+         hover:text-base text-xl text-green-500 animate-pulse duration-300 ease-in-out '>SAIBA MAIS<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
         </div>
 
         <div id="heroId" className='flex flex-col my-20 mx-1 justify-center items-center text-center'>

@@ -22,7 +22,7 @@ export default function Fazemos(){
     return(
         <div className="h-full text-slate-50 flex justify-center text-center">
             <div className="max-w-screen-lg mx-4 text-center">
-                <h1 className="uppercase max-sm:text-3xl text-4xl font-FiraCode p-4 font-bold pb-56">O que fazemos?</h1>
+                <h1 className="uppercase max-sm:text-3xl text-6xl font-FiraCode p-4 font-bold pb-56">O que fazemos?</h1>
                 <i className="text-6xl  text-cyan-600 pb-32 animate-bounce fa-solid fa-arrow-down"></i>
                 <div id="vigilant" className="pt-24 font-FiraCode">
                     <div className="Fade">
