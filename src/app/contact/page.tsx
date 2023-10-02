@@ -18,27 +18,6 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      // You can send a POST request to your server here with the form data
-      // Example:
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   body: JSON.stringify({ name, email, message }),
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      // });
-
-      // Check if the request was successful
-      // if (response.ok) {
-      //   setFormSubmitted(true);
-      //   setName('');
-      //   setEmail('');
-      //   setMessage('');
-      // } else {
-      //   setFormError('Failed to submit the form. Please try again later.');
-      // }
-
-      // For this example, we'll just log the values
       console.log('Name:', name);
       console.log('Email:', email);
       console.log('Message:', message);
@@ -108,7 +87,6 @@ export default function Contact() {
               </div>
             )}
 
-            {/* Form */}
             {!formSubmitted ? (
               <form
                 onSubmit={handleSubmit}
@@ -170,7 +148,6 @@ export default function Contact() {
               <div className='flex h-screen mt-12 text-2xl font-semibold text-green-500'>Formulário enviado!</div>
             )}
 
-            {/* Show error message if there's a form submission error */}
             {formError && <div className='text-red-500'>{formError}</div>}
           </div>
         </section>
