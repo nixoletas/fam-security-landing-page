@@ -1,4 +1,4 @@
-## I don't know why it is slow on Mobile. Can somebody help?
+## A website i made for my dad's company
 
 First, run the development server:
 
@@ -10,6 +10,6 @@ yarn dev
 pnpm dev
 ```
 ## DEMO
-Preview: https://fam-security-landing-nixoletas.vercel.app
+Preview: (https://taupe-pasca-66655c.netlify.app)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
