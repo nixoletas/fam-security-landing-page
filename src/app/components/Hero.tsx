@@ -20,11 +20,11 @@ export default function Hero() {
           <span className='max-sm:text-2xl text-3xl gradient-light font-bold uppercase'> na palma da sua mão!</span></h1>
           <p className='text-lg font-bold font-sans  text-gray3 uppercase'>segurança, 
           parceria e confiança.</p>
-          <div>
+          <div className="p-4">
             <a href="https://api.whatsapp.com/send?phone=5511989184515">
           <button className=' shadow-cyan-500/50 flex gap-2 
         bg-blue-950 font-bold uppercase p-4 rounded-md hover:rounded-xl mt-8 
-         hover:text-base text-xl text-green-500 animate-pulse duration-300 ease-in-out '>SAIBA MAIS<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
+         hover:text-2xl text-xl text-green-500 animate-pulse duration-300 ease-in-out dark:drop-shadow-[0_0_0.3rem_#a1f1f9]'>SAIBA MAIS<i className="fa-brands fa-whatsapp text-xl"></i></button></a></div>
         </div>
 
         <div id="heroId" className='flex flex-col my-20 mx-1 justify-center items-center text-center'>
