@@ -15,7 +15,7 @@ export default function About() {
         <div className="rounded-2xl">
             <h1 className="p-4 max-sm:text-3xl animate-fade-in-down text-6xl ">
                 Somos a <br></br>
-                <span id="heroId" className="font-semibold fam-security hero">
+                <span id="heroId" className="dark:drop-shadow-[0_0_0.3rem_#000000] font-semibold fam-security hero">
                     FAM Security
                 </span>
             </h1>
@@ -39,21 +39,21 @@ export default function About() {
 
 
     <div className='max-w-screen-lg mx-4 my-12'>
-        <div id="missao" className="max-md:flex max-md:flex-col max-md:gap-y-12 grid grid-cols-3 text-white font-sans justify-center">
+        <div id="missao" className="max-md:flex max-md:flex-col select-none gap-6 max-md:gap-y-12 grid grid-cols-3 text-white font-sans justify-center">
 
-            <div id="heroId" className=" px-2 gap-2 flex flex-col text-clip items-center">
+            <div id="heroId" className=" px-2 gap-2 hover:scale-105 transition-all flex border-transparent rounded-xl p-12 shadow-black shadow-xl flex-col text-center items-center">
                 <Image width="120" height="120" src="/crescimento.png" alt="" />
                 <h1 className="font-bold text-2xl ">Missão</h1>
                 <p className=" text-base font-FiraCode">Ser a melhor e mais completa empresa multisserviços do Brasil.</p>
             </div>
 
-            <div id="heroId" className="gap-2 px-2 flex flex-col text-clip items-center">
+            <div id="heroId" className="gap-2 px-2 hover:scale-105 transition-all flex border-transparent rounded-xl p-12 shadow-black shadow-xl flex-col text-center items-center">
                 <Image width="120" height="120" src="/location-1.png" alt="" />
                 <h1 className="font-bold text-2xl">Visão</h1>
                 <p className="text-sm font-FiraCode">Garantir e contribuir com a sinergia da atividade fim do nosso cliente e o seu continuado apoio com viés na inovação e tecnologia, permitindo a sobrevivência, o crescimento e a perpetuação.</p>
             </div>
 
-            <div id="heroId" className="gap-2 px-2 flex flex-col text-clip items-center">
+            <div id="heroId" className="gap-2 px-2 hover:scale-105 transition-all flex flex-col border-transparent rounded-xl p-12 shadow-black shadow-xl text-center items-center">
                 <Image width="120" height="120" src="/group.png" alt="" />
                 <h1 className="font-bold text-2xl">Valores</h1>
                 <p className=" text-sm font-FiraCode">Equilíbrio entre Pessoas & Negócios com responsabilidade empresarial em nosso DNA, garantindo excelência, qualidade e eficiência em nossos serviços.</p>
