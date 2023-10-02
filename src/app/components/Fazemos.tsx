@@ -32,7 +32,7 @@ export default function Fazemos(){
                             </p>
                         </div>
 
-                        <div id="textos-vigilancia" className="mt-6 gap-y-12 grid grid-cols-3 gap-2 gap-x-4 select-none">
+                        <div id="textos-vigilancia" className="max-md:grid-cols-1 mt-6 gap-y-12 grid grid-cols-3 gap-2 gap-x-4 select-none">
                         <div className="flex flex-col items-center gap-y-4 border-transparent hover:scale-105 transition-all shadow-2xl shadow-black border-yellow-400 rounded-lg p-3 text-clip">
                         <Image width="60" height="60" src="/police-car.webp" className="attachment-full size-full" alt="" loading="lazy"/>
                         <p className="font-semibold max-sm:text-lg text-2xl">
@@ -67,7 +67,7 @@ export default function Fazemos(){
                             </p>
                         </div>
 
-                        <div id="textos-tecnologia" className="mt-6 gap-y-12 grid grid-cols-4 gap-2 gap-x-4 select-none">
+                        <div id="textos-tecnologia" className="max-md:grid-cols-1 mt-6 gap-y-12 grid grid-cols-4 gap-2 gap-x-4 select-none">
                         <div className="flex flex-col items-center gap-y-4 border-transparent shadow-2xl hover:scale-105 transition-all shadow-black border-yellow-400 rounded-lg p-3">
                         <Image width="60" height="60" src="/tecnologia/security-camera-1.png" className="attachment-full size-full" alt="" loading="lazy"/>
                     <p className="font-semibold max-sm:text-lg text-2xl">
@@ -112,7 +112,7 @@ export default function Fazemos(){
                             </p>
                         </div>
 
-                        <div id="textos-facilities" className="mt-6 gap-y-12 grid grid-rows-1 grid-cols-4 gap-2 gap-x-4 select-none">
+                        <div id="textos-facilities" className="max-md:grid-cols-1 mt-6 gap-y-12 grid grid-rows-1 grid-cols-4 gap-2 gap-x-4 select-none">
                         <div className="flex flex-col gap-y-4 items-center border-transparent shadow-2xl hover:scale-105 transition-all shadow-black border-yellow-400 rounded-lg p-3">
                         <Image width="60" height="60" src="/facilities/policeman.png" className="attachment-full size-full" alt="" loading="lazy"/>
                         <p className="font-bold max-sm:text-lg text-2xl">
@@ -146,7 +146,7 @@ export default function Fazemos(){
                         </div>
                         </div>
 
-                        <div id="textos-facilities" className="mt-6 gap-y-12 grid grid-rows-1 grid-cols-3 gap-2 gap-x-4 select-none">
+                        <div id="textos-facilities" className="max-md:grid-cols-1 mt-6 gap-y-12 grid grid-rows-1 grid-cols-3 gap-2 gap-x-4 select-none">
                         <div className="flex items-center flex-col gap-y-4 border-transparent shadow-2xl hover:scale-105 transition-all shadow-black border-yellow-400 rounded-lg p-3">
                         <Image width="60" height="60" src="/facilities/receptionist-1.png" className="attachment-full size-full" alt="" loading="lazy"/>
                         <p className="font-bold max-sm:text-lg text-2xl">
