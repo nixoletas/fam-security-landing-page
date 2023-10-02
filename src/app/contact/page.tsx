@@ -12,22 +12,32 @@ export default function Contact() {
   const [isCopied, setIsCopied] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState('');
-
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      console.log('Name:', name);
-      console.log('Email:', email);
-      console.log('Message:', message);
-
-      setFormSubmitted(true);
-      setName('');
-      setEmail('');
-      setMessage('');
+      const formData = new FormData();
+      formData.append('entry.1563745019', name);
+      formData.append('entry.606401615', email);
+      formData.append('entry.2077698595', message);
+  
+      const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdENtwEoOcqQYe2Ip5joDJlwZN-_HbU_QGsoSagg2kw3SXJRg/formResponse', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors',
+      });
+  
+      if (response.ok) {
+        
+      } else {
+        setFormSubmitted(true);
+        setName('');
+        setEmail('');
+        setMessage('');
+      }
     } catch (error) {
-      setFormError('Failed to submit the form. Please try again later.');
+      setFormError('Falha ao enviar o formulário. Pro favor, tente novamente.');
     }
   };
 
@@ -87,7 +97,7 @@ export default function Contact() {
             {!formSubmitted ? (
               <form
                 onSubmit={handleSubmit}
-                className='max-w-screen-sm mt-4 text-white text-xl'
+                className='max-w-screen-sm h-screen mt-4 text-white text-xl'
               >
                 <div className='mb-4'>
                   <label htmlFor='name' className='block text-xl text-white'>
@@ -148,8 +158,8 @@ export default function Contact() {
             {formError && <div className='text-red-500'>{formError}</div>}
           </div>
         </section>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
