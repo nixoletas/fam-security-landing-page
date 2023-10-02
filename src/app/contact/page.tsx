@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function Contact() {
-  // Define state variables for the form fields and success/error messages
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -13,7 +13,7 @@ export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState('');
 
-  // Handle form submission
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -50,7 +50,6 @@ export default function Contact() {
     <>
       <div className='content-container'>
 
-        /* link font-awesome */
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -61,7 +60,6 @@ export default function Contact() {
 
         <Navbar />
 
-        /* dados da empresa */
         <section className='text-7xl px-6 text-white'>
           <div id='contact' className='w-full h-24'></div>
           <h1 className='animate-fade-in-down mb-16'>Entre em contato</h1>
@@ -80,7 +78,6 @@ export default function Contact() {
               </span>
             </p>
 
-            {/* Notification */}
             {isCopied && (
               <div className='bg-green-500 p-2 w-24 text-xs text-white rounded-md '>
                 Email copiado
