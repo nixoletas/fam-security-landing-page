@@ -13,3 +13,7 @@ pnpm dev
 Preview: (https://taupe-pasca-66655c.netlify.app)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+It's being used Google Forms for forms submissions.
+
+It's a NextJs13 App
