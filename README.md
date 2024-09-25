@@ -1,7 +1,5 @@
 # Fam Security Landing Page
 
-## Why?
-
 This is my first Next project ever! I tried creating a Landing Page for my father's company FAM SECURITY.
 
 First, run the development server:
